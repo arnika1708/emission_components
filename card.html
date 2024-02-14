@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Essentials for Your Site</title>
+  <style>
+    /* Set the font for the entire document */
+    body {
+      font-family: Arial, sans-serif;
+      box-sizing: border-box;
+    }
+
+    /* Style for the main container */
+    .container {
+      padding: 20px;
+      color: white;
+      background-color: black;
+    }
+    .container-content-wrapper{
+        display: flex;
+        width: 80%;
+        margin: auto;
+        gap:30px
+    }
+    .card-header{
+        flex:30%;
+        
+    }
+    .card-content-wrapper{
+        flex: 70%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+   
+
+    /* Style for each feature */
+    .feature {
+      box-sizing: border-box;
+      padding: 20px;
+      min-width: 250px;
+      
+    }
+   
+
+    /* Style for each feature title */
+    .feature h3 {
+      margin-top: 0;
+    }
+    .feature h1 {
+      margin-top: 0;
+    }
+    /* Make the layout responsive */
+    @media only screen and (max-width: 600px) {
+        body {
+                background-color: lightblue;
+            }
+        }
+    @media only screen and(max-width: 480px) {
+      .feature {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container-content-wrapper">
+    <div class="card-header">
+      <h1>ESSENTIALS FOR YOUR SITE</h1>
+    </div>
+    
+    <div class="card-content-wrapper">
+    <!-- Feature 1 -->
+    <div class="feature">
+      <h3>ELEMENTOR</h3>
+      <p >Full compatibility with the free drag-and-drop page builder,
+      Elementor plugin.</p>
+    </div>
+    <!-- Feature 2 -->
+    <div class="feature">
+      <h3>RESPONSIVE</h3>
+      <p >Your new website will look absolutely stunning on all device</p>
+      <p>types & screen sizes.</p>
+    </div>
+
+
+    <!-- Feature 3 -->
+    <div class="feature">
+      <h3>1-CLICK IMPORT</h3>
+      <p >Get the entire theme demo content in a matter of seconds
+      with 1-click import.</p>
+    </div> 
+    <!-- Feature 4 -->
+    <div class="feature">
+      <h3>HELP CENTER</h3>
+      <p>Browse the knowledge base or contact our support for any additional questions.</p>
+    </div>
+    
+    <!-- Feature 5 -->
+    <div class="feature">
+      <h3>WOOCOMMERCE</h3>
+      <p >Fully compatible with the free and most popular plugin for eCommerce.</p>
+    </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
